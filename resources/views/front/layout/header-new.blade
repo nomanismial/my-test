@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @php
+        $segment = request()->segment(1);
+        $route = $segment;
+        $page_name = get_postid("full");
+        $page_id = get_postid("page_id");
+        $post_id = get_postid("post_id");
+		Header("Cache-Control: must-revalidate");
+		$offset = 60 * 60 * 24 * 365;
+		$ExpStr = "Expires: " . gmdate("D, d M Y H", time() + $offset) . " GMT";
+		Header($ExpStr);
+    @endphp
+    @include('front.layout.meta')
+    @if ($page_name == "" Or $page_name="search")
+    <!--only For Home PAge-->
+    @php 
+    header("Content-type: text/css");
+    $css = array(
+        'grid.css',
+        'general.css',
+        'blog-list.css'
+    );
+    $css_content = '';
+    foreach ($css as $css_file) {
+        $file = route('HomeUrl')."/assets/css/".$css_file;
+        $css_content .= file_get_contents($file);
+    }
+    if(file_exists(base_path("assets/css/all.css"))){
+        unlink(base_path("assets/css/all.css"));
+    }
+    file_put_contents(base_path("assets/css/all.css"), $css_content);
+    @endphp
+    <link rel="stylesheet" href="{{asset('assets/css/all.css') }}">
+    @endif
+    @if ($page_id == 1)
+    <!-- Only Only For List Page -->
+    <link rel="stylesheet" href="{{asset('assets/css/animate.css') }}">
+    <link rel="stylesheet" href="{{asset('assets/css/blog-list.css') }}">
+    @endif
+    @if ($page_id == 2)
+    <!-- Only Detial page -->
+    <link rel="stylesheet" href="{{asset('assets/css/blog-detail.css') }}">
+    @endif
+    @if ($segment == "contact")
+    <!-- Only Contact page -->
+    <link rel="stylesheet" href="{{asset('assets/css/contact.css') }}">
+    @endif
+	@if ($segment == "terms-conditions" || $segment == "privacy-policy" )
+    <!-- Only Detial page -->
+    <link rel="stylesheet" href="{{asset('assets/css/blog-detail.css') }}">
+    @endif
+	</head>
+<body>

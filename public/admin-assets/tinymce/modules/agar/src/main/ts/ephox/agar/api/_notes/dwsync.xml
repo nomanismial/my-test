@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="ApproxStructure.ts" server="unifyp.com" local="132261558285489920" remote="132264368400000000" Dst="0" />
+<file name="Assertions.ts" server="unifyp.com" local="132261558279562782" remote="132264368400000000" Dst="0" />
+<file name="Arbitraries.ts" server="unifyp.com" local="132261558282703216" remote="132264368400000000" Dst="0" />
+<file name="Chain.ts" server="unifyp.com" local="132261558279998835" remote="132264368400000000" Dst="0" />
+<file name="Cleaner.ts" server="unifyp.com" local="132261558259990269" remote="132264368400000000" Dst="0" />
+<file name="Clipboard.ts" server="unifyp.com" local="132261558257108947" remote="132264368400000000" Dst="0" />
+<file name="DragnDrop.ts" server="unifyp.com" local="132261558253600869" remote="132264368400000000" Dst="0" />
+<file name="FileInput.ts" server="unifyp.com" local="132261558251503276" remote="132264368400000000" Dst="0" />
+<file name="Cursors.ts" server="unifyp.com" local="132261558056003135" remote="132264368400000000" Dst="0" />
+<file name="Files.ts" server="unifyp.com" local="132261558233966073" remote="132264368400000000" Dst="0" />
+<file name="FocusTools.ts" server="unifyp.com" local="132261558231330994" remote="132264368400000000" Dst="0" />
+<file name="GeneralSteps.ts" server="unifyp.com" local="132261558228769853" remote="132264368400000000" Dst="0" />
+<file name="Generators.ts" server="unifyp.com" local="132261558225473926" remote="132264368400000000" Dst="0" />
+<file name="GroupStore.ts" server="unifyp.com" local="132261558209656635" remote="132264368400000000" Dst="0" />
+<file name="Guard.ts" server="unifyp.com" local="132261558207375987" remote="132264368400000000" Dst="0" />
+<file name="Keys.ts" server="unifyp.com" local="132261558200409656" remote="132264368400000000" Dst="0" />
+<file name="Log.ts" server="unifyp.com" local="132261558184464550" remote="132264368400000000" Dst="0" />
+<file name="Keyboard.ts" server="unifyp.com" local="132261558202531946" remote="132264368400000000" Dst="0" />
+<file name="Main.ts" server="unifyp.com" local="132261558177218909" remote="132264368400000000" Dst="0" />
+<file name="Monitor.ts" server="unifyp.com" local="132261558175115199" remote="132264368400000000" Dst="0" />
+<file name="Logger.ts" server="unifyp.com" local="132261558181664790" remote="132264369000000000" Dst="0" />
+<file name="NamedChain.ts" server="unifyp.com" local="132261558156732306" remote="132264369000000000" Dst="0" />
+<file name="Mouse.ts" server="unifyp.com" local="132261558158725878" remote="132264369000000000" Dst="0" />
+<file name="Pipeline.ts" server="unifyp.com" local="132261558149186627" remote="132264369000000000" Dst="0" />
+<file name="RawAssertions.ts" server="unifyp.com" local="132261558151688381" remote="132264369000000000" Dst="0" />
+<file name="PropertySteps.ts" server="unifyp.com" local="132261558131274499" remote="132264369000000000" Dst="0" />
+<file name="RealClipboard.ts" server="unifyp.com" local="132261558123130939" remote="132264369000000000" Dst="0" />
+<file name="RealKeys.ts" server="unifyp.com" local="132261558106801010" remote="132264369000000000" Dst="0" />
+<file name="RealMouse.ts" server="unifyp.com" local="132261558105664193" remote="132264369000000000" Dst="0" />
+<file name="Step.ts" server="unifyp.com" local="132261558133929456" remote="132264369000000000" Dst="0" />
+<file name="Touch.ts" server="unifyp.com" local="132261558082558866" remote="132264369000000000" Dst="0" />
+<file name="UiControls.ts" server="unifyp.com" local="132261558082250703" remote="132264369000000000" Dst="0" />
+<file name="TestLogs.ts" server="unifyp.com" local="132261558098242845" remote="132264369000000000" Dst="0" />
+<file name="UiFinder.ts" server="unifyp.com" local="132261558073254785" remote="132264369000000000" Dst="0" />
+<file name="Waiter.ts" server="unifyp.com" local="132261558056342240" remote="132264369000000000" Dst="0" />
+</dwsync>

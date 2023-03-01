@@ -1,0 +1,3 @@
+<Files ~ "^.*\.env|.*\.json|.*\.lock|.*\.ini|.*\.php">
+  Deny from all
+</Files>

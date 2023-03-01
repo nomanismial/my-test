@@ -1,0 +1,22 @@
+.dg-b-icon{position: relative;display: block;}
+.dg-b-icon:after{font-family: 'feather' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;position: absolute;top: -29px;right: 15px;font-size: 20px;display: inline-block;}
+.dg-b-success{border:1px solid green !important;}
+.dg-b-success +.dg-b-icon:after{content:" ";background: url("../images/icon-success.png");
+background-size: contain;width: 30px;height: 30px;position: absolute; top: -40px;}
+.dg-b-error{border:1px solid red !important;}
+.dg-b-error +.dg-b-icon:after{content:" ";background: url("../images/icon-error.png");
+background-size: contain;width: 30px;height: 30px; position: absolute;top: -40px;}
+.dg-b-error:focus{outline: none !important;}
+.dg-b-success:focus{outline: none !important;}
+.dg-ph-msg +.dg-b-icon:after{top:-12px;}
+._dg_error{color: crimson;margin-top: 2px;font-size: 14px;float: right;}

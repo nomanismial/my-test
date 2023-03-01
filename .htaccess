@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^/?public/(.*)$ /$1 [L,NE,R=302]
+
+RewriteCond %{REQUEST_URI} !^/vendor/?
+RewriteRule ^/?(.*)$ /public/index.php?$1 [END,QSA]
