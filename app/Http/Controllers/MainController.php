@@ -127,6 +127,7 @@ class MainController extends Controller
             //   dd($res);
             return view('front.blogcat', compact('cats', 'blogs', 'res'));
         } elseif (get_postid('page_id') == 2) {
+
             $page_id = get_postid('page_id');
             $post_id = get_postid('post_id');
 
