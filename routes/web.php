@@ -47,7 +47,7 @@ Route::get('logs', [LogViewerController::class, 'index']);
 
 Route::group(['prefix' => admin , 'middleware' => ['auth:admin']], function () {
 
-    Route::match(["get","post"],    '/general-setting',   [GeneralsettingController::class])->name("general-setting");
+    Route::match(["get","post"],    '/general-setting',   [GeneralsettingController::class , 'index'])->name("general-setting");
     Route::patch('/general-setting',                      [GeneralsettingController::class,  'store']);
     Route::match(["get","post"],    '/menu',              [GeneralsettingController::class,  'menu'])->name("menu");
     Route::match(["get","post"],    '/theme-setting',     [GeneralsettingController::class,  'theme'])->name("theme-setting");
