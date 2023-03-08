@@ -41,12 +41,13 @@ ini_set("session.cookie_secure", 1);
     if (!defined('desktop')) define('desktop', $desktop);
     if (!defined('num')) define('num', $num);
 
+Route::get('logs', [\Rap2hpoutre\LaravelLogViewer\LogViewerController::class, 'index']);
 Route::match(["get","post"],'/'. admin , [AdminController::class , 'index'])->name('admin')->middleware('guest:admin');
 Route::get('logs', [LogViewerController::class, 'index']);
 
 Route::group(['prefix' => admin , 'middleware' => ['auth:admin']], function () {
 
-    Route::match(["get","post"],    '/general-setting',   [GeneralsettingController::class])->name("general-setting");
+    Route::match(["get","post"],    '/general-setting',   [GeneralsettingController::class , 'index'])->name("general-setting");
     Route::patch('/general-setting',                      [GeneralsettingController::class,  'store']);
     Route::match(["get","post"],    '/menu',              [GeneralsettingController::class,  'menu'])->name("menu");
     Route::match(["get","post"],    '/theme-setting',     [GeneralsettingController::class,  'theme'])->name("theme-setting");
